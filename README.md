@@ -1,6 +1,6 @@
 ## Overview
 Water quality is a key factor in determining agriculture and aquafarming production.
-This repo contains the code to model the parameters of temperature, pH and oxygen, which can determine whether the water quality is up to par in terms of standards and stability to allow aquatic animals to grow and flourish. 
+This project models the parameters of temperature, pH and oxygen, which can determine whether the water quality is up to par in terms of standards and stability to allow aquatic animals to grow and flourish. 
 The model is based on a paper titled “*Cellular Automata-Based Simulation Model for Water Quality Management of Pangasius Ponds*” by Huynh et al.
 
 The cells in this project are considered with hexagonal neighborhoods.
