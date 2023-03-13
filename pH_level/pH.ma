@@ -1,24 +1,24 @@
 [top]
-components : waterQuality
+components : pH
 
-[waterQuality]
+[pH]
 type : cell
 width : 21
 height : 21
 delay : transport
 defaultDelayTime : 100
 border : nowrapped 
-neighbors : waterQuality(-1,-1) waterQuality(-1,0) waterQuality(-1,1) 
-neighbors : waterQuality(0,-1)  waterQuality(0,0)  waterQuality(0,1)
-neighbors : waterQuality(1,-1)  waterQuality(1,0)  waterQuality(1,1)
+neighbors : pH(-1,-1) pH(-1,0) pH(-1,1) 
+neighbors : pH(0,-1)  pH(0,0)  pH(0,1)
+neighbors : pH(1,-1)  pH(1,0)  pH(1,1)
 initialvalue : 1
 initialrowvalue :  1     151515555552555555511
 initialrowvalue :  2     144444444424444444162
 initialrowvalue :  3     244444442444444444442
 
-localtransition : waterQuality-rule
+localtransition : pH-rule
 
-[waterQuality-rule]
+[pH-rule]
 rule : {( ( ( ( ( (-1,0) + (0,1) ) + (1,0) ) + (1,-1) ) + (0,-1) ) / 5 )} 100 { ( ( if((statecount(?) - (if((-1,1) = ?,1,0)) - (if((1,1) = ?,1,0))) < 0,0,(statecount(?) - (if((-1,1) = ?,1,0)) - (if((1,1) = ?,1,0)))) = 1 ) and ( (-1,-1) = ? ) ) and even(cellpos(1)) }
 rule : {( ( ( ( ( (-1,1) + (0,1) ) + (1,1) ) + (1,0) ) + (0,-1) ) / 5 )} 100 { ( ( if((statecount(?) - (if((-1,-1) = ?,1,0)) - (if((1,-1) = ?,1,0))) < 0,0,(statecount(?) - (if((-1,-1) = ?,1,0)) - (if((1,-1) = ?,1,0)))) = 1 ) and ( (-1,0) = ? ) ) and odd(cellpos(1)) }
 rule : {( ( ( ( ( (-1,-1) + (0,1) ) + (1,0) ) + (1,-1) ) + (0,-1) ) / 5 )} 100 { ( ( if((statecount(?) - (if((-1,1) = ?,1,0)) - (if((1,1) = ?,1,0))) < 0,0,(statecount(?) - (if((-1,1) = ?,1,0)) - (if((1,1) = ?,1,0)))) = 1 ) and ( (-1,0) = ? ) ) and even(cellpos(1)) }
