@@ -3,8 +3,8 @@ components : pH
 
 [pH]
 type : cell
-width : 21
-height : 21
+width : 10
+height : 10
 delay : transport
 defaultDelayTime : 100
 border : nowrapped 
@@ -12,9 +12,16 @@ neighbors : pH(-1,-1) pH(-1,0) pH(-1,1)
 neighbors : pH(0,-1)  pH(0,0)  pH(0,1)
 neighbors : pH(1,-1)  pH(1,0)  pH(1,1)
 initialvalue : 1
-initialrowvalue :  1     151515555552555555511
-initialrowvalue :  2     144444444424444444162
-initialrowvalue :  3     244444442444444444442
+InitialRow : 0 9.03 9.03 9.03 9.03 9.03 9.03 9.03 9.03 9.03 9.03
+InitialRow : 1 9.03 9.03 9.03 9.03 9.03 9.03 9.03 9.03 9.03 9.03
+InitialRow : 2 8.32 8.32 8.32 8.32 8.32 8.32 8.32 8.32 8.32 8.32
+InitialRow : 3 8.32 8.32 8.32 8.32 8.32 8.32 8.32 8.32 8.32 8.32
+InitialRow : 4 7.49 7.49 7.49 7.49 7.49 7.49 7.49 7.49 7.49 7.49
+InitialRow : 5 7.49 7.49 7.49 7.49 7.49 7.49 7.49 7.49 7.49 7.49
+InitialRow : 6 6.78 6.78 6.78 6.78 6.78 6.78 6.78 6.78 6.78 6.78
+InitialRow : 7 6.78 6.78 6.78 6.78 6.78 6.78 6.78 6.78 6.78 6.78
+InitialRow : 8 6.29 6.29 6.29 6.29 6.29 6.29 6.29 6.29 6.29 6.29
+InitialRow : 9 6.29 6.29 6.29 6.29 6.29 6.29 6.29 6.29 6.29 6.29
 
 localtransition : pH-rule
 
